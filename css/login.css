@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    overflow: hidden;
+    background-color: #663399;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    font-family: century gothic;
+    color: #663399;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 300px;
+    padding: 40px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #663399;
+    width: 40px;
+    height: 40px;
+}
+
+input[type="text"] {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78%;
+    height: 34px;
+    border: #663399 1px solid;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="password"] {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 34px;
+}
+
+.submit-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+button {
+ padding: 15px;
+ width: 100px;
+ background-color: #663399;
+ color: aliceblue;
+ border: transparent;
+ font-family: century gothic;
+}
+
+.error-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    height: 70px;
+    width: 100%;
+}
+
+.error {
+    color: rgb(137, 50, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.input-holder {
+    display: flex;
+    flex-wrap: wrap;
+}

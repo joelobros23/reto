@@ -1,0 +1,243 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: #663399;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    font-family: century gothic;
+    color: #663399;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    width: 400px;
+    padding: 40px;
+    background-color: antiquewhite;
+    line-height: 10px;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #663399;
+    width: 40px;
+    height: 40px;
+}
+
+.inline-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+input[type="text"] {
+    display: flex;
+    width: 78%;
+    height: 34px;
+    border: #663399 1px solid;
+    padding-left: 10px;
+}
+
+
+input[type="password"] {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 34px;
+}
+
+#name, #lastname {
+    width: 38%;
+}
+
+.submit-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="date"], select {
+    display: flex;
+    flex-wrap: wrap;
+    width: 125px;
+    height: 39px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+ padding: 15px;
+ width: 100px;
+ background-color: #663399;
+ color: aliceblue;
+ border: transparent;
+ font-family: century gothic;
+}
+
+#verification_code {
+    width: 166px !important;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+    height: 38px;
+    background-color: #663399;
+    color: aliceblue;
+    border: transparent;
+    font-family: century gothic;
+}
+
+.error-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    height: 75px;
+    width: 100%;
+}
+
+.error {
+    color: rgb(137, 50, 252);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 25px;
+}
+
+
+/* - - - - - - - Verify - - - - -- - - - - - - */
+
+.message-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #663399;
+}
+
+.verified {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100px;
+    color: aliceblue;
+}
+
+.message-container a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(255, 187, 0);
+    font-size: 40px;
+    padding: 20px;
+    width: 100px;
+}
+
+#email-sent {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 200px;
+    color: aliceblue;
+}
+
+#email-sent {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.input-holder {
+    display: flex; 
+    height: 50px;
+}
+
+@media (max-width: 500px) {
+    .inline-fields {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 400px;
+    }
+
+    .input-holder {
+        display: flex; 
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    input[type="date"], select {
+        width: 190px;
+        height: 39px;
+        padding-left: 10px;
+    }
+
+    select {
+        display: flex;
+        width: 200px;
+        height: 39px;
+        margin-right: 10px;
+        padding-left: 10px; 
+    }
+
+    input[type="text"] {
+        display: flex;
+        width: 80%;
+        height: 34px;
+        border: #663399 1px solid;
+        padding-left: 10px;
+    }
+
+    form {
+        height: 600px;
+        width: 300px;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        height: 0px;
+        width: 100%;
+    }
+}

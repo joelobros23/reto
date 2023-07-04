@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    # Turn on .htaccess config
+    RewriteEngine On
+
+    # Hide all php extensions
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php [NC,L]
+
+    # Rewrite profile URL with username parameter
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^/]+)/?$ profile.php?username=$1 [QSA,L]
+
+    # Rewrite username URL without the profile
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^/]+)$ profile.php?username=$1 [QSA,L]
+</IfModule>

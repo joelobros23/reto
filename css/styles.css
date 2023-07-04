@@ -1,0 +1,358 @@
+:root {
+    /* Purple: #7F6FF7 / Violet: #663399 / Light-Blue: #1dacff*/
+    --color:#7F6FF7 ;
+
+    --icons: #7F6FF7 ;
+    --text: #686868 ;
+
+
+    --icons-offset: #feffff;
+    --text-offset: #ffffff;
+
+
+    
+    --color-default: black;
+    --icons-default: #2e2e2e;
+    --text-default: #1d1d1d;
+    --bg-default: #fdfdff;
+
+    --bg: #444161;
+
+    --icons-navbar: #bab3ff;
+    --navbar: #2b2847;
+
+  }
+
+/* - - - Contains styles for all pages from nav and default styles for website - - - - - -*/
+
+body {
+    background-color: #444161;
+    margin: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+.logo-holder img {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--navbar);
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 15px;
+    color: var(--icons-navbar);
+    border-radius: 50px;
+    transition: opacity 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: var(--text-offset);
+    background-color: var(--icons);
+}
+
+nav ul li a i {
+    margin-right: 15px;
+}
+
+section {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100vh;
+}
+
+.contents-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: 100vh;
+}
+
+/* - - - - Burger Menu - - - - - -*/
+
+#burger-menu {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.burger-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  /* - - - - - - - - - - - Next Container - - - -- - - - - - - - - - */
+
+  .right-container {
+    position: relative;
+    right: 0px;
+    top: -25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--navbar);
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    }
+    
+    .right-container label {
+     color: white;
+    }
+
+    #right-menu-button {
+        display: none;
+    }
+
+  @media (max-width: 1080px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        width: 80px;
+        height: 100vh;
+        background-color: var(--navbar);
+    }
+
+    nav ul {
+        position: relative;
+        z-index: 50;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        margin-right: 40px;
+        margin-top: 100px;
+    }
+
+    nav ul li a span {
+        display: none;
+    }
+
+    #logo-holder {
+        display: none;
+    }
+
+    #logo-holder img {
+        display: none;
+    }
+
+    .contents-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 100vh;
+    }
+
+    #titlepanel {
+        color: #f1f1f1;
+        height: 200px;
+        width: 100%;
+        background-color: #969696 !important;
+    }
+
+    .right-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--navbar);
+        width: 50%;
+        height: 100vh;
+        }
+}
+
+@media (max-width: 500px) { 
+
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .friend-list {
+        position: relative;
+        z-index: 20;
+        top: 30px;
+    }
+
+    .new-matches-label {
+        display: none;
+    }
+
+.right-container {
+display: none;
+
+}
+    
+#burger-menu {
+    display: block;
+    position: absolute;
+}
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        z-index: 80;
+        justify-content: start;
+        align-items: start;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--navbar);
+        left: -310px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+    
+    nav ul li a span {
+        display: flex;
+    }
+
+    nav.menu-open {
+        transform: translateX(310px);
+      }
+
+      .contents-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .right-container {
+        display: none;
+        position: absolute;
+        z-index: 50;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        }
+
+        .right-container.right-open {
+            display: flex;
+        }
+
+        #right-menu-button {
+            display: flex;
+            position: absolute;
+            right: 20px;
+            z-index: 99;
+            top: 10px;
+            color: white;
+            font-size: xx-large;
+        }
+      
+}
+
+  /* - - - - Scroll Bar - - - - - -  */
+
+  /* Track */
+  ::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* background color of the track */
+    border-radius: 20px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3e2c5f; /* color of the handle */
+    border-radius: 4px; /* rounded corners of the handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #402179; /* color of the handle on hover */
+  }
+  
